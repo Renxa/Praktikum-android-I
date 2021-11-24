@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,10 +14,12 @@
         android:text="Nama" />
 
     <EditText
+        android:id="@+id/txtNama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Isi Nama Lengkap"
         android:inputType="textPersonName"
+        android:layout_marginBottom="10dp"
         />
 
     <TextView
@@ -25,10 +28,12 @@
         android:text="Email" />
 
     <EditText
+        android:id="@+id/txtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Isi Email"
         android:inputType="textEmailAddress"
+        android:layout_marginBottom="10dp"
         />
 
     <TextView
@@ -37,10 +42,12 @@
         android:text="No Handphone" />
 
     <EditText
+        android:id="@+id/txtTelp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Isi No Handphone"
         android:inputType="phone"
+        android:layout_marginBottom="10dp"
         />
 
     <TextView
@@ -49,10 +56,12 @@
         android:text="Tanggal Lahir" />
 
     <EditText
+        android:id="@+id/txtTgl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Isi Tanggal Lahir (dd/MM/yyyy)"
         android:inputType="date"
+        android:layout_marginBottom="10dp"
         />
 
     <TextView
@@ -61,16 +70,38 @@
         android:text="Jumlah Mata Kuliah" />
 
     <EditText
+        android:id="@+id/txtKuliah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Isi Jumlah Mata Kuliahn"
         android:inputType="number"
+        android:layout_marginBottom="10dp"
         />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIMPAN"
+            android:backgroundTint="@color/smooth_Navy1"
+            android:drawableLeft="@drawable/ic_baseline_save_24"
+            android:layout_marginEnd="8dp"
+            />
+
+        <Button
+            android:id="@+id/btnBatal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BATAL"
+            android:backgroundTint="@color/smooth_Purple2"
+            android:drawableLeft="@drawable/ic_baseline_cancel_24"
+            />
+    </LinearLayout>
 
 </LinearLayout>

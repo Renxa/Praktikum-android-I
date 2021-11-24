@@ -8,4 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bloodred">#8F0404</color>
+    <color name="smooth_Navy1">#1C0C5B</color>
+    <color name="smooth_Navy2">#3D2C8D</color>
+    <color name="smooth_Purple1">#916BBF</color>
+    <color name="smooth_Purple2">#C996CC</color>
 </resources>
