@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".HasilActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        />
+
+    <TextView
+        android:id="@+id/txtNamaHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textSize="25sp"
+        android:textColor="@color/smooth_Navy2"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        />
+
+    <TextView
+        android:id="@+id/txtEmailHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="25sp"
+        android:textColor="@color/smooth_Navy2"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Handphone"
+        />
+
+    <TextView
+        android:id="@+id/txtTelpHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Handphone"
+        android:textSize="25sp"
+        android:textColor="@color/smooth_Navy2"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Lahir"
+        />
+
+    <TextView
+        android:id="@+id/txtTglHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Lahir(dd/MM/yyyy)"
+        android:textSize="25sp"
+        android:textColor="@color/smooth_Navy2"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Mata Kuliah"
+        />
+
+    <TextView
+        android:id="@+id/txtKuliahHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Mata Kuliah"
+        android:textSize="25sp"
+        android:textColor="@color/smooth_Navy2"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>
