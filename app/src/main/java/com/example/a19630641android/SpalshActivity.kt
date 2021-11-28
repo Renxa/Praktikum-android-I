@@ -14,8 +14,17 @@ class SpalshActivity : AppCompatActivity() {
         getSupportActionBar()?.hide()
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+
+            val sp = this.getSharedPreferences("My_SP", MODE_PRIVATE)
+            val username = sp.getString("username", "")
+
+            if (username == ""){
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+            } else{
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
         }, 2000)
 
     }

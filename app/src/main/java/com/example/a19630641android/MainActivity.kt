@@ -39,6 +39,21 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val btnLogout = findViewById<Button>(R.id.btnLogout)
+
+        btnLogout.setOnClickListener {
+            val sp = this.getSharedPreferences("My_SP", MODE_PRIVATE)
+            with(sp.edit()) {
+                putString("password", "")
+                putString("username", "")
+                apply()
+            }
+
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+
+        }
+
         btnBatal.setOnClickListener{
             finish()
         }
